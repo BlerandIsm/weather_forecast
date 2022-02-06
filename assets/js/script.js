@@ -25,3 +25,16 @@ var formSubmitHandler =  function(event){
 var saveSearch = function(){
     localStorage.setItem("cities", JSON.stringify(cities));
 };
+
+
+var getCityWeather = function(city){
+    var apiKey = "b830c88ffb45613b625dac08cd42841c"
+    var apiURL = `https://api.openweathermap.org/data/2.5/forecast?q={city}&appid=${apiKey}`
+
+    fetch(apiURL)
+    .then(function(response){
+        response.json().then(function(data){
+            displayWeather(data, city);
+        });
+    });
+};
