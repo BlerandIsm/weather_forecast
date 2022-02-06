@@ -1,5 +1,9 @@
 .search-column{
-    background-color:	#D3D3D3;
+    background: linear-gradient( to left,  #00d2ff, #928bad);
+}
+.header{
+    background: linear-gradient( to left,  #00d2ff, #928bad);
+
 }
 
 .list-group-item{
@@ -25,4 +29,8 @@ span.favorable{
     padding: 3px;
     background-color: green;
     color:white;
+}
+.img-thumbnail{
+    height: 500px;
+    width: 100%;
 }
